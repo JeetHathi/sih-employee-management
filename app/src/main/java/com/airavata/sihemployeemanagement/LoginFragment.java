@@ -46,11 +46,18 @@ public class LoginFragment extends Fragment {
             @Override public void onClick(View view) {
                 FragmentManager manager = getActivity().getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-                transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out); // Set the anims
+                transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out); // Set the animations
                 transaction.addToBackStack(this.getClass().getName());
                 transaction.replace(R.id.main_activity_fragment_container, RegisterFragment.newInstance());
                 transaction.commit();
 
+            }
+        });
+
+        // TODO Implement the click event
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                // TODO Login
             }
         });
     }
