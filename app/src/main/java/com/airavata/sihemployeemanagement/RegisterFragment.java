@@ -32,7 +32,7 @@ public class RegisterFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        // Initialize the views
+        // Find the views
         signUpButton = (Button) getActivity().findViewById(R.id.fragment_register_submit);
 
         // TODO Implement an onclick event to register

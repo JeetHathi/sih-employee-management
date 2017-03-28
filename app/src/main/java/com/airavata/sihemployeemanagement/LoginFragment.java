@@ -37,7 +37,7 @@ public class LoginFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        // Initialize elements
+        // Find the views
         registerAccountTv = (TextView) getActivity().findViewById(R.id.fragment_login_register_link);
         loginBtn = (Button) getActivity().findViewById(R.id.fragment_login_submit);
 
