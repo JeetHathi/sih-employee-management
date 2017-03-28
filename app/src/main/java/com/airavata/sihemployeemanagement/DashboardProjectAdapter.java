@@ -9,13 +9,18 @@ import android.widget.TextView;
 public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProjectAdapter.ViewHolder> {
     String[] dataset; // TODO Update string[] dataset to cursor or databaseReference
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView projectNameTV;
 
         public ViewHolder(View view) {
             super(view);
             projectNameTV = (TextView) view.findViewById(R.id.project_item_project_name);
             // TODO View initialization
+            view.setOnClickListener(this);
+        }
+
+        @Override public void onClick(View view) {
+            // TODO Open the project and view/modify it's details
         }
     }
 
