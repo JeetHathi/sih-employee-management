@@ -17,7 +17,7 @@ public class DashboardFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static DashboardFragment newInstance(String param1, String param2) {
+    public static DashboardFragment newInstance() {
         return new DashboardFragment();
     }
 

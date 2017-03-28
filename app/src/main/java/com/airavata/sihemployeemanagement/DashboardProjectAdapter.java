@@ -29,10 +29,10 @@ public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProje
     public void onBindViewHolder(ViewHolder holder, int position) {
         // TODO Bind the data from the dataset to the viewholder
     }
-
+    // Used to get the length of the dataset
     @Override
     public int getItemCount() {
-        return dataset.length; // TODO proper implementation
+        return dataset == null ? 0 : dataset.length; // TODO proper implementation
     }
 
 }
