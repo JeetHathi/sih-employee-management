@@ -5,12 +5,13 @@
     <string name="nav_drawer_open"></string>
     <string name="nav_drawer_close"></string>
 
-    <!-- Strings for the login fragment -->
+    <!-- Strings for the login and register fragments -->
     <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="log_in">Log in</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
     <string name="new_account">Or create a new account</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
