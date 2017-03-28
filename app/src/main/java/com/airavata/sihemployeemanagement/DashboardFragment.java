@@ -43,8 +43,16 @@ public class DashboardFragment extends Fragment {
         RecyclerView.LayoutManager projectsLayoutManager = new LinearLayoutManager(getContext());
         projectsRecyclerView.setLayoutManager(projectsLayoutManager);
 
-        RecyclerView.Adapter projectsAdapter = new DashboardProjectAdapter(null);
+        // And set it's adapter
+        RecyclerView.Adapter projectsAdapter = new DashboardProjectAdapter(new String[]{"Project 1", "Project 2"});
         projectsRecyclerView.setAdapter(projectsAdapter);
+
+        // TODO Implement the onclick events for the fab
+        newProjectFAB.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                // TODO Logic to add new projects
+            }
+        });
 
     }
 
