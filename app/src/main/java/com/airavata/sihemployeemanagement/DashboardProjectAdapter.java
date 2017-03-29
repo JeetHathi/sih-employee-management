@@ -1,5 +1,8 @@
 package com.airavata.sihemployeemanagement;
 
+import android.content.Context;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,13 +10,16 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProjectAdapter.ViewHolder> {
+    private Context context;
     String[] dataSet; // TODO Update string[] dataSet to cursor or databaseReference
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        private Context context;
         TextView projectNameTV;
 
-        public ViewHolder(View view) {
+        public ViewHolder(Context context, View view) {
             super(view);
+            this.context = context;
             projectNameTV = (TextView) view.findViewById(R.id.project_item_project_name);
             // TODO View initialization
             view.setOnClickListener(this);
@@ -21,11 +27,18 @@ public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProje
 
         @Override public void onClick(View view) {
             // TODO Open the project and view/modify it's details
+            FragmentManager manager = ((MainActivity) context).getSupportFragmentManager();
+            FragmentTransaction transaction = manager.beginTransaction();
+            transaction.replace(R.id.main_activity_fragment_container, ProjectHomeFragment.newInstance());
+            transaction.addToBackStack(null);
+            transaction.commit(); // TODO animations
+
         }
     }
 
     // Constructor
-    public DashboardProjectAdapter(String[] dataSet) { // TODO Change the type of the dataSet
+    public DashboardProjectAdapter(Context context, String[] dataSet) { // TODO Change the type of the dataSet
+        this.context = context;
         this.dataSet = dataSet;
     }
 
@@ -33,7 +46,7 @@ public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProje
     @Override
     public DashboardProjectAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.projects_recycler_view_item, parent, false);
-        return new ViewHolder(view); // TODO Inflate the ViewHolder
+        return new ViewHolder(context, view); // TODO Inflate the ViewHolder
     }
 
     // Called when the data is to be bound to the ViewHolder
