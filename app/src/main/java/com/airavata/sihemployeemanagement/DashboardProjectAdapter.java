@@ -61,5 +61,4 @@ public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProje
     public int getItemCount() {
         return dataSet == null ? 0 : dataSet.length; // TODO proper implementation
     }
-
 }
