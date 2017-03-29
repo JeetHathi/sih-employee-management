@@ -44,7 +44,7 @@ public class DashboardFragment extends Fragment {
         projectsRecyclerView.setLayoutManager(projectsLayoutManager);
 
         // And set it's adapter
-        RecyclerView.Adapter projectsAdapter = new DashboardProjectAdapter(getContext(), new String[]{"Project 1", "Project 2"});
+        RecyclerView.Adapter projectsAdapter = new DashboardProjectAdapter(getContext(), new String[]{"Project 1", "Project 2"}); // TODO Proper dataSet
         projectsRecyclerView.setAdapter(projectsAdapter);
 
         // TODO Implement the onclick events for the fab
