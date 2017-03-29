@@ -4,7 +4,6 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.util.Log;
 
 public class ProjectHomePagerAdapter extends FragmentStatePagerAdapter {
     private Context context;
@@ -33,7 +32,7 @@ public class ProjectHomePagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return ProjectDetailsFragment.newInstance();
             case 1:
-                return RegisterFragment.newInstance();
+                return ProjectEmployeesFragment.newInstance();
             default:
                 return null;
         }
