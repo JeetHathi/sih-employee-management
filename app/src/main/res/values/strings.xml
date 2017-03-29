@@ -5,7 +5,7 @@
     <string name="nav_drawer_open">Open(ed) Drawer</string>
     <string name="nav_drawer_close">Close(d) Drawer</string>
 
-    <!-- Strings for the login and register fragments -->
+    <!-- Strings for LoginFragment and RegisterFragment -->
     <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -14,7 +14,12 @@
     <string name="sign_up">Sign up</string>
     <string name="new_account">Or create a new account</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings for ProjectHomeFragment -->
+    <string name="details">Details</string>
+    <string name="employees">Employees</string>
+    <string-array name="tab_names">
+        <item>@string/details</item>
+        <item>@string/employees</item>
+    </string-array>
 
 </resources>
