@@ -3,6 +3,8 @@ package com.airavata.sihemployeemanagement;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,9 @@ import android.widget.TableLayout;
 
 public class ProjectHomeFragment extends Fragment {
     TabLayout tabLayout;
+    ViewPager viewPager;
+    PagerAdapter adapter;
+
     public ProjectHomeFragment() {
         // Required empty public constructor
     }
@@ -33,10 +38,10 @@ public class ProjectHomeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         // Find the views
+        viewPager = (ViewPager) getActivity().findViewById(R.id.fragment_project_home_viewpager);
         tabLayout = (TabLayout) getActivity().findViewById(R.id.fragment_project_home_tab_layout);
+        adapter = new ProjectHomePagerAdapter(getContext(), getActivity().getSupportFragmentManager());
 
-        // Initialize the tabLayout
-        tabLayout.addTab(tabLayout.newTab().setText("Details"));
-        tabLayout.addTab(tabLayout.newTab().setText("Employees"));
+        viewPager.setAdapter(adapter);
     }
 }
