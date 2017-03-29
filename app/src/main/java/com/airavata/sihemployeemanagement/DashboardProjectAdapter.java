@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProjectAdapter.ViewHolder> {
-    String[] dataset; // TODO Update string[] dataset to cursor or databaseReference
+    String[] dataSet; // TODO Update string[] dataSet to cursor or databaseReference
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView projectNameTV;
@@ -25,28 +25,28 @@ public class DashboardProjectAdapter extends RecyclerView.Adapter<DashboardProje
     }
 
     // Constructor
-    public DashboardProjectAdapter(String[] dataset) { // TODO Change the type of the dataset
-        this.dataset = dataset;
+    public DashboardProjectAdapter(String[] dataSet) { // TODO Change the type of the dataSet
+        this.dataSet = dataSet;
     }
 
     // Called when a new ViewHolder is to be created
     @Override
     public DashboardProjectAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.projects_recycler_view_item, parent, false);
-        return new ViewHolder(view); // TODO Inflate the viewholder
+        return new ViewHolder(view); // TODO Inflate the ViewHolder
     }
 
     // Called when the data is to be bound to the ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.projectNameTV.setText(dataset[position]);
-        // TODO Bind the data from the dataset to the viewholder
+        holder.projectNameTV.setText(dataSet[position]);
+        // TODO Bind the data from the dataSet to the ViewHolder
     }
 
-    // Used to get the length of the dataset
+    // Used to get the length of the dataSet
     @Override
     public int getItemCount() {
-        return dataset == null ? 0 : dataset.length; // TODO proper implementation
+        return dataSet == null ? 0 : dataSet.length; // TODO proper implementation
     }
 
 }
