@@ -31,7 +31,7 @@ public class ProjectHomePagerAdapter extends FragmentStatePagerAdapter {
         // TODO Return tabs
         switch (position) {
             case 0:
-                return LoginFragment.newInstance();
+                return ProjectDetailsFragment.newInstance();
             case 1:
                 return RegisterFragment.newInstance();
             default:
