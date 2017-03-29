@@ -22,4 +22,12 @@
         <item>@string/employees</item>
     </string-array>
 
+    <!-- Strings for ProjectDetailsFragment -->
+    <string name="project_name_header">Project Name</string>
+    <string name="project_owner_header">Owner</string>
+    <string name="project_deadline_header">Deadline</string>
+    <string name="project_budget_header">Budget</string>
+    <string name="project_start_date_header">Start date</string>
+    <string name="project_comments_header">Other comments</string>
+
 </resources>
