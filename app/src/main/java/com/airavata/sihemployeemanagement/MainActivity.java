@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the initial fragment
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.main_activity_fragment_container, DashboardFragment.newInstance());
+        transaction.replace(R.id.main_activity_fragment_container, LoginFragment.newInstance());
         transaction.commit();
     }
 }
