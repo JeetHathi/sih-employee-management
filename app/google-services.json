@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "193535633972",
+    "firebase_url": "https://sih-employee-management.firebaseio.com",
+    "project_id": "sih-employee-management",
+    "storage_bucket": "sih-employee-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193535633972:android:f9fbf88af79216ad",
+        "android_client_info": {
+          "package_name": "com.airavata.sihemployeemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193535633972-07srl9bq6sqsff0svlqcuqsfrsfjjd7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.airavata.sihemployeemanagement",
+            "certificate_hash": "56c2553f8ab1d6ebf4e02fa0fdfd1ff66cba2d8e"
+          }
+        },
+        {
+          "client_id": "193535633972-oos8qafojp219qgm272ee9ol0r5dv7sg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDWw0sqAjeHBf0iwUUxlpd8UZ4RWRAFuM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193535633972-oos8qafojp219qgm272ee9ol0r5dv7sg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
