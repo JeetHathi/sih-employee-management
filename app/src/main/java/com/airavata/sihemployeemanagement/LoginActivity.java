@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(this);
         String url; // TODO set the url of the webservice
 
-        // Request a string response from the provided url
+        // Request a jsonArray response from the provided url
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
                 url,
                 new Response.Listener<JSONArray>() {
