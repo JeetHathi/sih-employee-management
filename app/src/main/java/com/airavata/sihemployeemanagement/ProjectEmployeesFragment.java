@@ -47,6 +47,13 @@ public class ProjectEmployeesFragment extends Fragment {
         // And set it's adapter
         RecyclerView.Adapter adapter = new ProjectEmployeesAdapter(getContext(), new String[]{"Bill Gates", "Steve Jobs"});
         employeesRecyclerView.setAdapter(adapter);
+
+        newEmployeeFAB.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View view) {
+                AddEmployee dialog = new AddEmployee();
+                dialog.show(getActivity().getSupportFragmentManager(), null);
+            }
+        });
     }
 
 }

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">SIH Employee Management</string>
 
+    <!-- Common strings for all dialogs -->
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
     <!-- Strings for the nav drawer. Don't exactly know why they are required. TODO Know why they are required -->
     <string name="nav_drawer_open">Open(ed) Drawer</string>
     <string name="nav_drawer_close">Close(d) Drawer</string>
@@ -34,7 +38,43 @@
     <string name="project_start_date_header">Start date</string>
     <string name="project_comments_header">Other comments</string>
 
+    <!-- Strings for New Project -->
+    <string name="new_project">New Project</string>
+    <string name="project_name">Project Name</string>
+    <string name="project_owner">Owner</string>
+    <string name="project_deadline">Deadline</string>
+    <string name="project_budget">Budget</string>
+    <string name="project_start_date">Start Date</string>
+    <string name="project_remarks">Remarks</string>
+    <string name="project_description">Description</string>
+
+    <!-- String for add employee -->
+    <string name="add_emp">Add Employee</string>
+    <string name="add_emp_uname">Username</string>
+    <string name="add_emp_password">Password</string>
+    <string name="add_emp_num_of_days">Number of days</string>
+    <string name="add_emp_designation">Designation</string>
+    <string name="add_emp_salary">Salary</string>
+    <string name="add_emp_dob">DOB</string>
+    <string name="add_emp_doj">DOJ</string>
+    <string name="add_emp_gender">Gender</string>
+    <string name="add_emp_email">Email</string>
+    <string name="add_emp_dept">Department</string>
+    <string name="add_emp_role">Role</string>
+    <string name="add_emp_parent">Parent</string>
+    <string name="add_emp_project">Project</string>
+    <string name="add_emp_pancard_no">PAN Card Number</string>
+    <string name="add_emp_adharcard_no">Aadhar Card Number</string>
+    <string name="add_emp_photo">Photo</string>
+    <string name="add_emp_male">Male</string>
+    <string name="add_emp_female">Female</string>
+
+    <!-- String for Employee detail -->
+    <string name="emp_detail_uname">Username</string>
+    <string name="emp_detail_name">Name</string>
+    <string name="emp_detail_salary">Salary</string>
+    <string name="emp_detail_contact_detail">Contact Detail</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
 </resources>

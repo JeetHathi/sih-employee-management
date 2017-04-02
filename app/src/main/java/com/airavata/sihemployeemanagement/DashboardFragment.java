@@ -50,7 +50,8 @@ public class DashboardFragment extends Fragment {
         // TODO Implement the onclick events for the fab
         newProjectFAB.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View view) {
-                // TODO Logic to add new projects
+                NewProject dialog = new NewProject();
+                dialog.show(getActivity().getSupportFragmentManager(), null);
             }
         });
 
