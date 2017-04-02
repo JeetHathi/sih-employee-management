@@ -8,16 +8,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
-import org.json.JSONArray;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
     TextView registerAccountTv;
@@ -27,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(null, "MainActivity started");
         setContentView(R.layout.activity_login);
 
         // Find the views
@@ -43,10 +45,10 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // TODO Implement the click event
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.i(null, "Attempting log in");
                 // TODO Login
 
                 // Get the user inputted strings
@@ -59,27 +61,10 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void performLogin(String username, String password) {
-        // Instantiate the RequestQueue
-        RequestQueue queue = Volley.newRequestQueue(this);
-        String url; // TODO set the url of the webservice
+    private void performLogin(final String email, final String password) {
+        User user = new User();
+        user.setEmail(email);
 
-        // Request a jsonArray response from the provided url
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
-                url,
-                new Response.Listener<JSONArray>() {
-                    @Override public void onResponse(JSONArray jsonArray) {
-                        // TODO parse the array
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override public void onErrorResponse(VolleyError volleyError) {
-                        Log.e(null, volleyError.getMessage());
-                    }
-                }
-        );
-
-        // Add the request to the requestQueue
-        queue.add(jsonArrayRequest);
+        APIControll
     }
 }
